@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/lightgray">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnCancelUserUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Cancel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnUpdateUserUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Update"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/userproflinearfragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgray"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:background="@color/lightgray"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="20dp"
+                            android:clickable="true"
+                            android:elevation="10dp"
+
+                            android:foreground="?android:attr/selectableItemBackground"
+                            app:cardCornerRadius="20dp">
+
+                            <ImageView
+                                android:id="@+id/imagefragUserDetailsUpdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/backgroundcolor"
+                                android:scaleType="centerCrop"
+                                android:transitionName="imageTransition"
+                                android:src="@drawable/ic_perm_username" />
+
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <Button
+                            android:id="@+id/btnfragUserDetailsUpdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:text="Change Profile Picture"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/backgroundcolor">
+
+                    <!--content-->
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Pickup Place :"
+                            android:textStyle="bold"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/picupUserfrag"
+                            app:layout_constraintStart_toStartOf="@+id/textView9" />
+
+                        <EditText
+                            android:id="@+id/picupUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:hint="pickup place"
+                            android:inputType="text"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/nameUserfrag"
+                            app:layout_constraintTop_toBottomOf="@+id/nameUserfrag" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="End Place :"
+                            android:textStyle="bold"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/endplaceUserfrag"
+                            app:layout_constraintStart_toStartOf="@+id/textView" />
+
+                        <EditText
+                            android:id="@+id/endplaceUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:hint="end place"
+                            android:inputType="text"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/picupUserfrag"
+                            app:layout_constraintTop_toBottomOf="@+id/picupUserfrag" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Company :"
+                            android:textStyle="bold"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/companyUserfrag"
+                            app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+                        <EditText
+                            android:id="@+id/companyUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="42dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:hint="company"
+                            android:inputType="text"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/endplaceUserfrag"
+                            app:layout_constraintTop_toBottomOf="@+id/endplaceUserfrag" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Occupation :"
+                            android:textStyle="bold"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/occupationUserfrag"
+                            app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+                        <EditText
+                            android:id="@+id/occupationUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:hint="occupation"
+                            android:inputType="text"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/companyUserfrag"
+                            app:layout_constraintTop_toBottomOf="@+id/companyUserfrag" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Address :"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/addressUserfrag"
+                            app:layout_constraintStart_toStartOf="@+id/textView4" />
+
+                        <EditText
+                            android:id="@+id/addressUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:hint="address"
+                            android:inputType="text"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/occupationUserfrag"
+                            app:layout_constraintTop_toBottomOf="@+id/occupationUserfrag" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="NIC :"
+                            android:textStyle="bold"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/nicUserfrag"
+                            app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+                        <EditText
+                            android:id="@+id/nicUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:hint="nic"
+                            android:inputType="text"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/addressUserfrag"
+                            app:layout_constraintTop_toBottomOf="@+id/addressUserfrag" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Mobile :"
+                            android:textStyle="bold"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/mobileUserfrag"
+                            app:layout_constraintStart_toStartOf="@+id/textView6" />
+
+                        <EditText
+                            android:id="@+id/mobileUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:hint="mobile"
+                            android:inputType="text"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/nicUserfrag"
+                            app:layout_constraintTop_toBottomOf="@+id/nicUserfrag" />
+
+                        <TextView
+                            android:id="@+id/textView87"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Details :"
+                            android:textStyle="bold"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/DetailsUserfrag"
+                            app:layout_constraintStart_toStartOf="@+id/textView7" />
+
+                        <EditText
+                            android:id="@+id/DetailsUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="30dp"
+                            android:ems="10"
+                            android:hint="Details"
+                            android:inputType="text"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/mobileUserfrag"
+                            app:layout_constraintTop_toBottomOf="@+id/mobileUserfrag" />
+
+
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:padding="3dp"
+                            android:text="Name :"
+                            android:textStyle="bold"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/nameUserfrag"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <EditText
+                            android:id="@+id/nameUserfrag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="16dp"
+                            android:ems="10"
+                            android:hint="name"
+                            android:inputType="none"
+                            android:text="@null"
+                            android:textAlignment="center"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView9"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    </android.support.constraint.ConstraintLayout>
+
+
+                    <!--content-->
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

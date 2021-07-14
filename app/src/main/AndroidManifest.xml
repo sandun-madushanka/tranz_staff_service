@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sandappsefur.transport">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".Notification.PaymentNotificationAppDri"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".startup.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.login" />
+        <activity android:name=".login.register" />
+        <activity android:name=".home.Home" />
+        <activity android:name=".home.HomeD" />
+        <activity android:name=".profile.profile" />
+        <activity android:name=".profile.profileDriver" />
+        <activity android:name=".profile.profileDriverReq" />
+        <activity android:name=".fees.feesnUsers" />
+        <activity android:name=".profile.viewAllMembersDriver" />
+        <activity android:name=".settingsapp.Settings" />
+        <activity android:name=".settingsapp.SettingsDriver" />
+        <activity android:name=".StaffService.StaffService" />
+        <activity android:name=".StaffService.StaffServiceDriver" />
+        <activity android:name=".StaffService.ProfileUserReq" />
+        <activity android:name=".fees.PaymentsDriver" />
+        <activity android:name=".fees.PaymentDriverUserDetails" />
+        <activity android:name=".fees.PaymentDUserHistory" />
+        <activity android:name=".login.ForgotPassword" />
+        <activity android:name=".Navigation.NavigationUser" />
+        <!-- <receiver android:name="Main.AlertReciver" android:enabled="true" android:exported="true"/> -->
+        <!-- <receiver android:name="Main.AlertReciver" /> -->
+        <!-- <service android:name="Main.NotificationJobScheduler" android:permission="android.permission.BIND_JOB_SERVICE" /> -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Navigation.NavigationDriver" />
+        <activity android:name=".Attendence.AttendenceUser" />
+        <activity android:name=".Attendence.AttendenceDriver" />
+        <activity android:name=".Notification.NotificationHomeD" />
+        <activity android:name=".settingsapp.Faq"></activity>
+    </application>
+
+</manifest>

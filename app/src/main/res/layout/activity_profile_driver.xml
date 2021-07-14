@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical"
+    tools:context=".profile.profileDriver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgray"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelUserUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:onClick="btnHomeDriver"
+            android:text="Home"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/driverproflinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/lightgray"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayoutdriverprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="20dp">
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:clickable="true"
+                                android:elevation="10dp"
+
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:id="@+id/imageViewDrivedp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/backgroundcolor"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_perm_username" />
+
+                                <!--<Button-->
+                                <!--android:layout_width="28dp"-->
+                                <!--android:layout_height="33dp"-->
+                                <!--android:background="@color/backgroundcolor"-->
+                                <!--android:drawableLeft="@drawable/ic_control_point"-->
+                                <!--android:onClick="btnChengeProfilePic"-->
+                                <!--android:textColor="@color/backgroundcolor" />-->
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/nameDriver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="User Name"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="3dp"
+                                android:background="@color/lightgray" />
+
+                            <TextView
+                                android:id="@+id/occupationDriver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="3dp"
+                                android:text="Occupation"
+                                android:textColor="@color/darkgray" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Vehecal Sheet Count :"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/shtcountDriver"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="25"
+                                    android:textColor="@color/darkgray"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="3dp"
+                                    android:text="Available Sheet Count :"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/availableshtcountDriver"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="25"
+                                    android:textColor="@color/darkgray"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <!--content-->
+
+                <Button
+                    android:id="@+id/btneditprofileDriver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/buttonstyle1"
+                    android:onClick="btnEditProfileDriver"
+                    android:text="Edit Profile"
+                    android:textColor="@color/backgroundcolor" />
+
+                <View
+                    android:id="@+id/vieweditprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/darkgray" />
+
+                <TextView
+                    android:id="@+id/txtvwvstatush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Vehicle Status"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearvhstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Status :"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/svtatusDriver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Java Institute"
+                            android:textColor="@color/darkgray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="31dp"
+                                android:layout_height="33dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:drawableLeft="@drawable/ic_control_point"
+                                android:onClick="btnChengeVehicleStatus"
+                                android:textColor="@color/backgroundcolor" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/vwvhclstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/darkgray" />
+
+                <!--date deadline-->
+                <TextView
+                    android:id="@+id/txtvwvdateh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Monthly Payment Deadline"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearvhdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Date :"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/datedeadDriver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="28"
+                            android:textColor="@color/darkgray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/btnDatedead"
+                                android:layout_width="31dp"
+                                android:layout_height="33dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:drawableLeft="@drawable/ic_control_point"
+                                android:onClick="btnChengeDateDeadLine"
+                                android:textColor="@color/backgroundcolor" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/vwvhclstatuss"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/darkgray" />
+                <!--date deadline-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="About"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_person_pin"
+                        android:padding="3dp"
+                        android:text="Start Location :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/picupDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Pahathgama"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_person_pin"
+                        android:padding="3dp"
+                        android:text="End Location :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/endplaceDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Java Institute"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Vehicle No :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vnoDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Java Institute"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Company :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/companyDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Java Institute"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Address :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/addressDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Java Institute"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="NIC :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nicDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Java Institute"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Mobile :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mobileDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Java Institute"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Details :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailsDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:padding="5dp"
+                        android:text="Java Institute"
+                        android:textColor="@color/darkgray" />
+
+
+                </LinearLayout>
+                <!--content-->
+                <View
+                    android:id="@+id/vwuserdtailcntn"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/darkgray" />
+
+                <TextView
+                    android:id="@+id/tvmembers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Members"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/Linearmembers"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_margin="20dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:clipToPadding="false"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<android.support.v7.widget.CardView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="90dp"-->
+
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:clickable="true"-->
+                            <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="center"-->
+                                <!--android:orientation="vertical">-->
+
+                                <!--<android.support.v7.widget.CardView-->
+                                    <!--android:layout_width="50dp"-->
+                                    <!--android:layout_height="50dp"-->
+                                    <!--android:layout_margin="5dp"-->
+                                    <!--android:clickable="true"-->
+                                    <!--android:elevation="10dp"-->
+
+                                    <!--android:foreground="?android:attr/selectableItemBackground"-->
+                                    <!--app:cardCornerRadius="20dp">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent"-->
+                                        <!--android:background="@color/backgroundcolor"-->
+                                        <!--android:scaleType="centerCrop"-->
+                                        <!--android:src="@drawable/ic_perm_username" />-->
+
+                                <!--</android.support.v7.widget.CardView>-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="User Name"-->
+                                    <!--android:textStyle="bold" />-->
+
+
+                            <!--</LinearLayout>-->
+                        <!--</android.support.v7.widget.CardView>-->
+
+                        <!--<android.support.v7.widget.CardView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="90dp"-->
+
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:clickable="true"-->
+                            <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="center"-->
+                                <!--android:orientation="vertical">-->
+
+                                <!--<android.support.v7.widget.CardView-->
+                                    <!--android:layout_width="50dp"-->
+                                    <!--android:layout_height="50dp"-->
+                                    <!--android:layout_margin="5dp"-->
+                                    <!--android:clickable="true"-->
+                                    <!--android:elevation="10dp"-->
+
+                                    <!--android:foreground="?android:attr/selectableItemBackground"-->
+                                    <!--app:cardCornerRadius="20dp">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent"-->
+                                        <!--android:background="@color/backgroundcolor"-->
+                                        <!--android:scaleType="centerCrop"-->
+                                        <!--android:src="@drawable/ic_perm_username" />-->
+
+                                <!--</android.support.v7.widget.CardView>-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="User Name"-->
+                                    <!--android:textStyle="bold" />-->
+
+
+                            <!--</LinearLayout>-->
+                        <!--</android.support.v7.widget.CardView>-->
+
+                        <!--<android.support.v7.widget.CardView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="90dp"-->
+
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:clickable="true"-->
+                            <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="center"-->
+                                <!--android:orientation="vertical">-->
+
+                                <!--<android.support.v7.widget.CardView-->
+                                    <!--android:layout_width="50dp"-->
+                                    <!--android:layout_height="50dp"-->
+                                    <!--android:layout_margin="5dp"-->
+                                    <!--android:clickable="true"-->
+                                    <!--android:elevation="10dp"-->
+
+                                    <!--android:foreground="?android:attr/selectableItemBackground"-->
+                                    <!--app:cardCornerRadius="20dp">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent"-->
+                                        <!--android:background="@color/backgroundcolor"-->
+                                        <!--android:scaleType="centerCrop"-->
+                                        <!--android:src="@drawable/ic_perm_username" />-->
+
+                                <!--</android.support.v7.widget.CardView>-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="User Name"-->
+                                    <!--android:textStyle="bold" />-->
+
+
+                            <!--</LinearLayout>-->
+                        <!--</android.support.v7.widget.CardView>-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:clipToPadding="false"-->
+                        <!--android:gravity="center"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<android.support.v7.widget.CardView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="90dp"-->
+
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:clickable="true"-->
+                            <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="center"-->
+                                <!--android:orientation="vertical">-->
+
+                                <!--<android.support.v7.widget.CardView-->
+                                    <!--android:layout_width="50dp"-->
+                                    <!--android:layout_height="50dp"-->
+                                    <!--android:layout_margin="5dp"-->
+                                    <!--android:clickable="true"-->
+                                    <!--android:elevation="10dp"-->
+
+                                    <!--android:foreground="?android:attr/selectableItemBackground"-->
+                                    <!--app:cardCornerRadius="20dp">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent"-->
+                                        <!--android:background="@color/backgroundcolor"-->
+                                        <!--android:scaleType="centerCrop"-->
+                                        <!--android:src="@drawable/ic_perm_username" />-->
+
+                                <!--</android.support.v7.widget.CardView>-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="User Name"-->
+                                    <!--android:textStyle="bold" />-->
+
+
+                            <!--</LinearLayout>-->
+                        <!--</android.support.v7.widget.CardView>-->
+
+                        <!--<android.support.v7.widget.CardView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="90dp"-->
+
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:clickable="true"-->
+                            <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="center"-->
+                                <!--android:orientation="vertical">-->
+
+                                <!--<android.support.v7.widget.CardView-->
+                                    <!--android:layout_width="50dp"-->
+                                    <!--android:layout_height="50dp"-->
+                                    <!--android:layout_margin="5dp"-->
+                                    <!--android:clickable="true"-->
+                                    <!--android:elevation="10dp"-->
+
+                                    <!--android:foreground="?android:attr/selectableItemBackground"-->
+                                    <!--app:cardCornerRadius="20dp">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent"-->
+                                        <!--android:background="@color/backgroundcolor"-->
+                                        <!--android:scaleType="centerCrop"-->
+                                        <!--android:src="@drawable/ic_perm_username" />-->
+
+                                <!--</android.support.v7.widget.CardView>-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="User Name"-->
+                                    <!--android:textStyle="bold" />-->
+
+
+                            <!--</LinearLayout>-->
+                        <!--</android.support.v7.widget.CardView>-->
+
+                        <!--<android.support.v7.widget.CardView-->
+                            <!--android:layout_width="90dp"-->
+                            <!--android:layout_height="90dp"-->
+
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:clickable="true"-->
+                            <!--android:foreground="?android:attr/selectableItemBackground">-->
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="center"-->
+                                <!--android:orientation="vertical">-->
+
+                                <!--<android.support.v7.widget.CardView-->
+                                    <!--android:layout_width="50dp"-->
+                                    <!--android:layout_height="50dp"-->
+                                    <!--android:layout_margin="5dp"-->
+                                    <!--android:clickable="true"-->
+                                    <!--android:elevation="10dp"-->
+
+                                    <!--android:foreground="?android:attr/selectableItemBackground"-->
+                                    <!--app:cardCornerRadius="20dp">-->
+
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="match_parent"-->
+                                        <!--android:background="@color/backgroundcolor"-->
+                                        <!--android:scaleType="centerCrop"-->
+                                        <!--android:src="@drawable/ic_perm_username" />-->
+
+                                <!--</android.support.v7.widget.CardView>-->
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:text="User Name"-->
+                                    <!--android:textStyle="bold" />-->
+
+
+                            <!--</LinearLayout>-->
+                        <!--</android.support.v7.widget.CardView>-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <Button
+                    android:id="@+id/btnallmembers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/buttonstyle1"
+                    android:onClick="btnviewAllMembers"
+                    android:text="View All Members"
+                    android:textColor="@color/backgroundcolor" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

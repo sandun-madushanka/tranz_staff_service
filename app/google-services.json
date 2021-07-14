@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "247003435113",
+    "firebase_url": "https://tranz-b8710.firebaseio.com",
+    "project_id": "tranz-b8710",
+    "storage_bucket": "tranz-b8710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247003435113:android:cf98e0df5edd91a4",
+        "android_client_info": {
+          "package_name": "com.sandappsefur.transport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247003435113-r29ji567mjk06in83rrb2r4540t275dt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sandappsefur.transport",
+            "certificate_hash": "a0239f2c8eb4660bc353baebfc2682509d4417f0"
+          }
+        },
+        {
+          "client_id": "247003435113-pkio7u5fsh3ompb8u8clb7f680vbq5dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvryHk2GE6CCEG5MWF2XemWInA_X1jWk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247003435113-pkio7u5fsh3ompb8u8clb7f680vbq5dt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

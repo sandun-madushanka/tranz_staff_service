@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Tranz</string>
+
+    <string name="txtRemember">Remember Me</string>
+
+
+    <!--nitification stf-->
+    <string name="txtname">Name</string>
+    <string name="btnreqaccept">Accept</string>
+    <string name="btnreqdelete">Delete</string>
+    <!--nitification stf-->
+
+    <!--charts-->
+    <string name="chrtpieh1">Available Member Space</string>
+    <string name="chrtpieatdh1">Attendance User</string>
+    <!--charts-->
+
+    <!--popup hint-->
+    <string name="pophntmnth">Month</string>
+    <string name="pophntamount">Payment Amount</string>
+    <!--popup hint-->
+
+    <!--snackbar-->
+    <string name="snckMsg">Please Complete Your Profile</string>
+    <string name="snckbtn">Go to Profile</string>
+    <!--snackbar-->
+
+    <!--password reset-->
+    <string name="oldpwdhnt">Old password</string>
+    <string name="newpwdhnt">New password</string>
+    <string name="renwpwdhnt">Re-enter new password</string>
+    <!--password reset-->
+
+    <string-array name="Spiner_items_services">
+        <item>Spiner item one</item>
+        <item>Spiner item two</item>
+        <item>Spiner item three</item>
+        <item>Spiner item four</item>
+    </string-array>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBnKP7fucwG4gS28QkzO3Z9nkcwBW8yPC0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
